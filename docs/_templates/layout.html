@@ -1,0 +1,53 @@
+{% extends "!layout.html" %}
+  {% block footer %} {{ super() }}
+
+  <style>
+    /* Sidebar */
+    .wy-nav-side {
+      background: gray;
+    }
+    
+    .wy-nav-content {
+    max-width: 90%;
+   }
+    
+    h1{
+      font-size:300%;
+    }
+    
+    body{
+      font-family: "fantasy";
+   }
+    
+   .wy-table-responsive table td {
+      /* !important prevents the common CSS stylesheets from overriding
+         this as on RTD they are loaded after this stylesheet */
+      white-space: normal !important;
+   }
+    
+    
+    h1 {
+      color: red ;
+    }
+
+    h2 {
+      color: green ;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .blue {
+      color: blue;
+    }
+
+    .big{
+      font-size: 25px;
+    }
+
+    
+   
+  
+  </style>
+{% endblock %}
